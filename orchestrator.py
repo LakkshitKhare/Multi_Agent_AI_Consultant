@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 from dotenv import load_dotenv
 from agents import ResearchAgent, UseCaseAgent, ResourceAgent, FinalProposalAgent
 
@@ -51,3 +52,4 @@ class Orchestrator:
         
 
         return final_proposal
+
