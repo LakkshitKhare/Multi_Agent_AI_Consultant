@@ -77,7 +77,7 @@ The `Orchestrator` class is the central control system. It initializes each agen
 ## Demo & Hosted App
 
   * **Demo Video (Loom):** [https://www.loom.com/share/b5d7d9e4a3c14d59a2f7c0a9e7f8e8b0](https://www.google.com/search?q=https://www.loom.com/share/b5d7d9e4a3c14d59a2f7c0a9e7f8e8b0)
-  * **Hosted App:** [[https://ai-consultant-agent.streamlit.app/](https://www.google.com/search?q=https://ai-consultant-agent.streamlit.app/)](https://multi-agent-ai-consultant-khare.streamlit.app/)
+  * **Hosted App:** [[https://ai-consultant-agent.streamlit.app/](https://www.google.com/search?q=https://ai-consultant-agent.streamlit.app/)]
 
 ## Contributing
 
