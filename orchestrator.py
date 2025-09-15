@@ -2,9 +2,16 @@ import os
 from dotenv import load_dotenv
 from agents import ResearchAgent, UseCaseAgent, ResourceAgent, FinalProposalAgent
 
-load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY")
 
+# We will remove the load_dotenv() and os.getenv() part for deployment
+# For local development, you can keep the .env file and this code:
+# load_dotenv()
+# API_KEY = os.getenv("GEMINI_API_KEY")
+
+# For deployment on Streamlit Cloud, use st.secrets to get the key.
+# This is a secure and robust way to manage credentials in the cloud.
+# The key GEMINI_API_KEY must match what you entered in the secrets manager.
+API_KEY = st.secrets["GEMINI_API_KEY"]
 class Orchestrator:
     def __init__(self):
         # Instantiate each agent with the API key
@@ -42,4 +49,5 @@ class Orchestrator:
         
         print("\n--- Workflow Complete ---")
         
+
         return final_proposal
